@@ -23,3 +23,16 @@ function processArray(numbers) {
   return result;
 }
 
+function formatArrayStrings(strings, numbers) {
+
+  // creates a new array based on strings
+  // takes the position of the string and the index number
+
+  return strings.map((str, index) => {
+    let num = numbers[index];
+
+    // checks if the position of the string assigned by the processed
+    // numbers are even or odd. and Uppercases or Lowercases the string respectively
+    return num % 2 === 0 ? str.toUpperCase() : str.toLowerCase();
+  });
+}
