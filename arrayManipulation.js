@@ -1,3 +1,7 @@
+// Import the function from userInfo.js
+const createUserProfiles = require('./userInfo'); 
+
+
 function processArray(numbers) {
   // Create a new array to store the processed numbers
   let result = [];
